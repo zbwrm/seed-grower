@@ -13,4 +13,7 @@ city.new_quality('biomes', 'geography', random.choice([1, 1, 1, 1, 2]))
 city.new_quality('building styles', 'architecture', random.randint(2,4))
 city.new_quality('building materials', 'architecture', random.randint(1,3))
 
+city.new_quality('color schemes', 'aesthetic', random.randint(1,2))
+city.new_quality('dominant colors', 'aesthetic', random.randint(3,6))
+
 print(city)
