@@ -51,7 +51,7 @@ class City:
         for tag in self.qualities:
             format_string += f"\n{tag}"
             for quality in self.qualities[tag]:
-                format_string += f"\n {quality.name}"
+                format_string += f"\n- {quality.name}"
                 for selection in quality.sample():
-                    format_string += f"\n  {selection}"
+                    format_string += f"\n  - {selection}"
         return format_string
