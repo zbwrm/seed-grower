@@ -8,3 +8,4 @@ Results should be interpreted as useful.
 * add auto-tagging based on file structure
 * add toggles for categories
 * more categories!
+* write to file
