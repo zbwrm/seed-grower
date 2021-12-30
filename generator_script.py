@@ -1,22 +1,20 @@
 import random
+import argparse
 from city.city import City
 
+# TODO
+"""
+input variables
+-l [filename] write to log
+-v verbose
+"""
 
-city = City()
+parser = argparse.ArgumentParser(description='A random generator of cultural characteristics intended to spark ideas and help draw threads.')
+parser.add_argument('-s', '--seed-directory', help='Sets the seed directory for the generator.', default='default',type=str)
 
-city.new_quality('quirks', 'culture', random.randint(1,3))
-city.new_quality('taboos', 'culture', random.randint(1,3))
-city.new_quality('mitigations', 'culture', random.randint(1,2))
+args = parser.parse_args()
 
-city.new_quality('biomes', 'geography', random.choice([1, 1, 1, 1, 2]))
-
-city.new_quality('building styles', 'architecture', random.randint(2,4))
-city.new_quality('building materials', 'architecture', random.randint(1,3))
-city.new_quality('structural features', 'architecture', random.randint(2,5))
-city.new_quality('design patterns', 'architecture', random.randint(1,2))
-
-city.new_quality('color schemes', 'aesthetic', random.randint(1,2))
-city.new_quality('dominant colors', 'aesthetic', random.randint(3,6))
-city.new_quality('visual motifs', 'aesthetic', random.randint(3,5))
+city = City(args.seed_directory)
+city.read_from_tree()
 
 print(city)
