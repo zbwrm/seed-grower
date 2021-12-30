@@ -8,9 +8,7 @@ The lists are adapted from [this blog post](http://monstersandmanuals.blogspot.c
 The lists of cultural characteristics are very incomplete and represent my own cultural biases. Pull requests to add to these are very welcome!
 
 ### TODO
-* add auto-tagging based on file structure
-* add toggles for categories
 * more categories!
 * write to file
-* proper input flag handling
+* proper input flag handling & documentation
 * some sort of language generation
