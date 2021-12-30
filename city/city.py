@@ -49,7 +49,7 @@ class City:
     def __str__(self) -> str:
         format_string = ""
         for tag in self.qualities:
-            format_string += f"\n{tag}"
+            format_string += f"\n\n{tag}"
             for quality in self.qualities[tag]:
                 format_string += f"\n- {quality.name}"
                 for selection in quality.sample():
