@@ -7,6 +7,7 @@ Currently, the only seed is a culture generator adapted from [this blog post](ht
 Pull requests to add to these are very welcome!
 
 ### TODO
+* de citi-fy the code (generalize? genericize?)
 * recursivize the seed reader so it doesn't only go one layer deep
 * more categories!
 * write to file
